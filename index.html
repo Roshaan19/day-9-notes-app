@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes App | Day 9</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+
+            <i class="fa-solid fa-note-sticky"></i>
+
+            Notes App
+
+        </h1>
+
+        <p>
+
+            Save your ideas and important notes.
+
+        </p>
+
+    </header>
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search notes...">
+
+    </section>
+
+    <!-- Add Note -->
+
+    <section class="note-form">
+
+        <h2>Add New Note</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Note Title">
+
+        <textarea
+            id="description"
+            placeholder="Write your note..."
+            rows="6"></textarea>
+
+        <div class="buttons">
+
+            <button id="saveBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Save Note
+
+            </button>
+
+            <button id="clearBtn">
+
+                <i class="fa-solid fa-eraser"></i>
+
+                Clear
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+
+            <h3>Total Notes</h3>
+
+            <h2 id="noteCount">0</h2>
+
+        </div>
+
+    </section>
+
+    <!-- Notes -->
+
+    <section>
+
+        <h2 class="section-title">
+
+            My Notes
+
+        </h2>
+
+        <div id="notesContainer" class="notes-grid">
+
+            <!-- JavaScript will generate notes -->
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            Day 9 Project | Ahmed Umer Roshaan
+
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
